@@ -2,14 +2,13 @@
 
 <head>
 
-<script type="text/javascript" src="js/jquery.1.js"></script>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script>
-
- $('div').on('click', function() {
-   $(this).toggleclass('show-description');
- });
-
+$(document).ready(function(){
+    $("div").click(function(){
+        $(this).toggleClass('show-description');
+    });
+});
 </script>
 
 <style>
@@ -19,6 +18,7 @@
    margin: 0 auto;
    max-width: 400px;
    background-color: #232323;
+   background-attachment: fixed;
       }
 
  div {
@@ -42,7 +42,7 @@
    height: 30px;
    transition: height .5s;
    -webkit-transition: height .5s;
-   -moz-transition: height .5s; 
+   -moz-transition: height .5s;
    }
 
  small {
@@ -52,7 +52,7 @@
  .show-description  p {
     height: 150px;
    }
-  
+
  .show-description small {
     opacity: 1;
   }
@@ -95,7 +95,24 @@
 
   small {
     font-size: 16px;
-         } 
+         } }
+
+ul{
+           background-color: rgba(0,0,0,0.5);
+           color: white;
+
+    }
+li{
+           display:inline;
+           padding: 0 5px;
+
+  }
+a{
+                   text-decoration: none;
+                   color: grey;
+                   background: gold;
+
+ }
 
 </style>
 
@@ -105,36 +122,63 @@
 
 <h2>Fashionable Wear</h2>
 
+<ul>
+                <li><a href="#">Home</a></li>
+                 <li><a href="#">Mens Wear</a></li>
+                 <li><a href="#">Womens Wear</a></li>
+                 <li><a href="#">Kids Wear</a></li>
+</ul>
+
 <div class="a">
-
 <p>gown<span>$35</span></br>
-
 <small>
-
 This awesome flawless gown enhances the beauty of any girl and boosts up her confidence.
-
 </small>
-
 </p>
-
 </div>
 
 <div class="b">
-
 <p>Leather Jacket<span>$25</span></br>
-
 <small>
-
 Perfect fitting leather jacket which is perfect for any place like outing , party etc.
-
 </small>
-
 </p>
-
 </div>
+
+<div class="c">
+<p>Apoorva<span>$25</span></br>
+<small>
+Perfect fitting leather jacket which is perfect for any place like outing , party etc.
+</small>
+</p>
+</div>
+
+<div class="d">
+<p>Leather Jacket<span>$25</span></br>
+<small>
+Perfect fitting leather jacket which is perfect for any place like outing , party etc.
+</small>
+</p>
+</div>
+
+<div class="e">
+<p>Leather Jacket<span>$25</span></br>
+<small>
+Perfect fitting leather jacket which is perfect for any place like outing , party etc.
+</small>
+</p>
+</div>
+
+<ul>
+
+                <li><a href="www.fb.com">Facebook</a></li>
+                 <li><a href="www.twitter.com">Twitter</a></li>
+                 <li><a href="www.youtube.com">Youtube</a></li>
+                 <li><a href="www.reddit.com">Reddit</a></li>
+
+
+  </ul>
 
 </body>
 
 </html>
- 
- 
