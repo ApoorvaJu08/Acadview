@@ -1,0 +1,140 @@
+<html>
+
+<head>
+
+<script type="text/javascript" src="js/jquery.1.js"></script>
+
+<script>
+
+ $('div').on('click', function() {
+   $(this).toggleclass('show-description');
+ });
+
+</script>
+
+<style>
+
+ body {
+   font-family: helvetica, sans-serif;
+   margin: 0 auto;
+   max-width: 400px;
+   background-color: #232323;
+      }
+
+ div {
+   height:200px;
+   background-size: cover;
+   position: relative;
+   margin: 40px 0 0 0;
+   border-radius: 12px;
+     }
+
+ p {
+   color: rgba(255,0,0,1);
+   background: #000;
+   background:-webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,0.4));
+   background:-moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,0.4));
+   padding: 10px;
+   text-align: justify;
+   position: absolute;
+   bottom: 0;
+   margin: 0;
+   height: 30px;
+   transition: height .5s;
+   -webkit-transition: height .5s;
+   -moz-transition: height .5s; 
+   }
+
+ small {
+   opacity: 0;
+   }
+
+ .show-description  p {
+    height: 150px;
+   }
+  
+ .show-description small {
+    opacity: 1;
+  }
+
+ span {
+   position: absolute;
+   right: 0;
+  }
+
+ .a {
+   background: url("http://richclubgirl.com/wp-content/uploads/2016/01/anna-faris-320x240.png");
+    }
+
+ .b {
+   background: url("https://4.imimg.com/data4/VL/LW/MY-13989503/leather-jacket-250x250.jpg");
+   background-size: cover;
+    }
+
+  h1 {
+   font-size: 75px;
+   text-align: center;
+   margin: 60px 0 0 0;
+   color: #aaaaaa;
+     }
+
+  @media (max-width: 500px) {
+
+  h1 {
+    font-size: 50px;
+    margin-top: 20px;
+     }
+
+  div {
+    margin: 20px 12px 0 12px;
+      }
+
+   p {
+    font-size: 20px;
+     }
+
+  small {
+    font-size: 16px;
+         } 
+
+</style>
+
+</head>
+
+<body background="https://www.inthefrow.com/wp-content/uploads/2015/11/partywear.jpg">
+
+<h2>Fashionable Wear</h2>
+
+<div class="a">
+
+<p>gown<span>$35</span></br>
+
+<small>
+
+This awesome flawless gown enhances the beauty of any girl and boosts up her confidence.
+
+</small>
+
+</p>
+
+</div>
+
+<div class="b">
+
+<p>Leather Jacket<span>$25</span></br>
+
+<small>
+
+Perfect fitting leather jacket which is perfect for any place like outing , party etc.
+
+</small>
+
+</p>
+
+</div>
+
+</body>
+
+</html>
+ 
+ 
